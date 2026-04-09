@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vital-signs-monitor/static/css/main.e6c13ad2.css",
+    "main.js": "/vital-signs-monitor/static/js/main.ec530b8a.js",
+    "static/js/453.d7370eda.chunk.js": "/vital-signs-monitor/static/js/453.d7370eda.chunk.js",
+    "index.html": "/vital-signs-monitor/index.html",
+    "main.e6c13ad2.css.map": "/vital-signs-monitor/static/css/main.e6c13ad2.css.map",
+    "main.ec530b8a.js.map": "/vital-signs-monitor/static/js/main.ec530b8a.js.map",
+    "453.d7370eda.chunk.js.map": "/vital-signs-monitor/static/js/453.d7370eda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ec530b8a.js"
+  ]
+}

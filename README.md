@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 🫀 Patient Vital Signs Monitor Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time patient vital signs monitor built in React, simulating how biomedical sensors feed data into embedded alert systems. Developed as a demonstration of embedded systems logic applied to healthcare — bridging a background in Human Physiology with software engineering.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔬 What It Does
 
-### `npm start`
+This project simulates the core architecture of a biomedical monitoring device:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Sensor Input → Data Processing → Threshold Logic → Alert Output**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Every 2 seconds, the system "polls" simulated sensor readings for five vital signs and runs them through conditional logic to determine patient status — exactly how a real embedded system like an Arduino or Raspberry Pi would process signals from physical sensors.
 
-### `npm test`
+### Vitals Monitored
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Vital Sign | Normal Range | Source |
+|---|---|---|
+| Heart Rate | 60–100 bpm | Cardiovascular Physiology |
+| SpO₂ (Blood Oxygen) | 95–100% | Respiratory Physiology |
+| Body Temperature | 36.1–37.5 °C | Thermoregulation |
+| Systolic Blood Pressure | 90–120 mmHg | Cardiovascular Physiology |
+| Diastolic Blood Pressure | 60–80 mmHg | Cardiovascular Physiology |
 
-### `npm run build`
+> Normal ranges are clinically accurate, sourced from Human Physiology (B.Sc., Bayero University Kano).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Live ECG Waveform** — animates in real time, speed tied to current heart rate
+- **5 Vital Sign Cards** — colour-coded with HIGH/LOW flags when out of range
+- **3 Patient Profiles** — switch between Cardiology, ICU, and General Ward patients
+- **Condition Simulator** — toggle between Stable, Warning, and Critical states to observe system response
+- **Alert Log** — fires contextual alerts when readings breach thresholds
+- **Reading History** — tracks the last 8 readings with timestamps and status
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧠 The Embedded Systems Connection
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was built to demonstrate understanding of how embedded systems work in healthcare contexts:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Embedded Concept | This Simulation |
+|---|---|
+| Sensor polling | Vitals generated every 2 seconds |
+| Threshold comparisons | Conditional checks against clinical ranges |
+| State machine logic | Stable → Warning → Critical transitions |
+| Output/actuation | Alert log firing on abnormal readings |
+| Real-time display | Live ECG canvas + updating vital cards |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In a physical implementation, the Python or C logic powering an Arduino/Raspberry Pi would follow the same flow — read sensor, compare to threshold, trigger output.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠 Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React (Hooks)
+- HTML5 Canvas — ECG waveform rendering
+- CSS animations — pulse, blink, slide-in effects
+- No external dependencies beyond React
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Run Locally
 
-### Analyzing the Bundle Size
+```bash
+# Clone the repo
+git clone https://github.com/asiyasabiu25/vital-signs-monitor.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies
+npm install
 
-### Making a Progressive Web App
+# Start development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Or view the live demo: **[asiyasabiu25.github.io/vital-signs-monitor](#)**
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👩🏾‍💻 About the Developer
 
-### Deployment
+**Asiya Sabiu Sulaiman** — Data Analytics & Health Technology
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- B.Sc. Human Physiology, Bayero University Kano
+- 3MTT Data Science & Machine Learning Certificate
+- Microsoft Business Analyst Professional Certificate (Coursera)
+- McKinsey Forward Programme 2026
 
-### `npm run build` fails to minify
+This project sits at the intersection of my clinical background and software skills — demonstrating that understanding *what* sensors measure and *why* thresholds matter is just as important as the code itself.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 [Portfolio](https://docs.google.com/document/d/1QSPGPmWNSs3jboSpEqSpeG8Y8zmXLGCKRGVwH5ZifIs/edit?usp=sharing) · [GitHub](https://github.com/asiyasabiu25) · [LinkedIn](https://linkedin.com/in/asiya-sabiu)
+
+---
+
+## 📄 License
+
+MIT — free to use, adapt, and build on.

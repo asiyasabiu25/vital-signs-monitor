@@ -75,7 +75,7 @@ npm install
 npm start
 ```
 
-Or view the live demo: **[asiyasabiu25.github.io/vital-signs-monitor](#)**
+Or view the live demo: **[https://asiyasabiu25.github.io/vital-signs-monitor](#)**
 
 ---
 

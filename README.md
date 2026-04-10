@@ -75,7 +75,7 @@ npm install
 npm start
 ```
 
-Or view the live demo: **[https://asiyasabiu25.github.io/vital-signs-monitor](#)**
+Or view the live demo: **[Live Demo](https://asiyasabiu25.github.io/vital-signs-monitor)**
 
 ---
 
@@ -90,10 +90,11 @@ Or view the live demo: **[https://asiyasabiu25.github.io/vital-signs-monitor](#)
 
 This project sits at the intersection of my clinical background and software skills — demonstrating that understanding *what* sensors measure and *why* thresholds matter is just as important as the code itself.
 
-🔗 [Portfolio](https://docs.google.com/document/d/1QSPGPmWNSs3jboSpEqSpeG8Y8zmXLGCKRGVwH5ZifIs/edit?usp=sharing) · [GitHub](https://github.com/asiyasabiu25) · [LinkedIn](https://linkedin.com/in/asiya-sabiu)
+🔗 [Portfolio](https://asiyasabiu25.github.io/Data-Science-Portfolio) · [GitHub](https://github.com/asiyasabiu25) · [LinkedIn](https://linkedin.com/in/asiya-sabiu)
 
 ---
 
 ## 📄 License
 
 MIT — free to use, adapt, and build on.
+
